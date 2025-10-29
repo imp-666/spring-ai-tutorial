@@ -40,29 +40,38 @@ rag目录
     - rag-etl-pipeline              # 提取文档、转换文档、写出文档的案例   
     - rag-evaluation                # 多模型评估，模型响应结果，结合RAG的案例
     - rag-elasticsearch             # 基于ES的rag案例
-mcp目录                             
-    - client目录                        
-        - mcp-stdio-client                  # MCP的stdio客户端案例
-        - mcp-webflux-client                # MCP的webflux客户端案例
-        - mcp-streamable-client             # MCP的streamable客户端案例
-        - mcp-streamable-webflux-client     # MCP的streamable webflux客户端案例
-        - mcp-annotation-client             # MCP基于注解的客户端案例
-        - mcp-nacos3-client                 # MCP基于Nacos3.*实现分布式部署客户端案例
-        - mcp-auth-client                   # MCP基于请求头的授权客户端
-        - mcp-recovery-client               # MCP的SSE连接断开，自动重连案例
-        - mcp-return-dirct-client           # MCP的结果直接返回给客户端案例
-        - mcp-nacos-parse-swagger-server
-    - server目录                     
-        - mcp-stdio-server                      # MCP的stdio服务端案例
-        - mcp-webflux-server                    # MCP的webflux服务端案例
-        - mcp-nacos3-server                     # MCP基于Nacos3.*实现分布式部署服务端案例
-        - mcp-auth-server                       # MCP基于请求头的授权服务端-工具粒度
-        - mcp-auth-web-server                   # MCP基于请求头的授权服务端-粒度
-        - mcp-gateway-server                    # SAA的gateway服务零代码实现存量应用转换MCP案例
-        - mcp-streamable-webmvc-server          # MCP的streamable webmvc案例
-        - mcp-streamable-webflux-server         # MCP的streamable webflux案例
-        - mcp-annotation-server                 # MCP基于注解的服务端案例
-        - mcp-nacos-parse-swagger-server(待补充) # MCP基于nacos动态解析swagger的restful服务端案例
+mcp目录
+    - mcp-auth                           # MCP认证相关模块
+        - client目录
+            - mcp-auth-client                # MCP基于请求头的授权客户端
+            - mcp-security-client            # MCP安全认证客户端
+        - server目录
+            - mcp-auth-server               # MCP基于请求头的授权服务端-工具粒度
+            - mcp-auth-web-server           # MCP基于请求头的授权服务端-页面粒度
+            - mcp-security-server           # MCP安全认证服务端
+        - authorization-server           # MCP授权服务端
+    - mcp-starter                        # MCP基础功能模块
+        - client目录
+            - mcp-stdio-client              # MCP的stdio客户端案例
+            - mcp-webflux-client            # MCP的webflux客户端案例
+            - mcp-streamable-client         # MCP的streamable客户端案例
+            - mcp-streamable-webflux-client # MCP的streamable webflux客户端案例
+            - mcp-annotation-client         # MCP基于注解的客户端案例
+        - server目录
+            - mcp-stdio-server              # MCP的stdio服务端案例
+            - mcp-webflux-server            # MCP的webflux服务端案例
+            - mcp-streamable-webmvc-server  # MCP的streamable webmvc案例
+            - mcp-streamable-webflux-server # MCP的streamable webflux案例
+            - mcp-annotation-server         # MCP基于注解的服务端案例
+    - mcp-supple                         # MCP扩展功能模块
+        - client目录
+            - mcp-nacos3-client             # MCP基于Nacos3.*实现分布式部署客户端案例
+            - mcp-recovery-client           # MCP的SSE连接断开，自动重连案例
+            - mcp-return-direct-client      # MCP的结果直接返回给客户端案例
+        - server目录
+            - mcp-nacos3-server             # MCP基于Nacos3.*实现分布式部署服务端案例
+            - mcp-gateway-server            # SAA的gateway服务零代码实现存量应用转换MCP案例
+            - mcp-nacos-parse-swagger-server # MCP基于nacos动态解析swagger的restful服务端案例
 ovservation目录
     - observabilty                              # ObservationHandler下的client、model、tool、embedding的观测案例
     - observability-langfuse                    # 基于langfuse的观测案例
