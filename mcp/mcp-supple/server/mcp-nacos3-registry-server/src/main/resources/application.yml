@@ -5,7 +5,7 @@ spring:
   main:
     banner-mode: off
   application:
-    name: mcp-nacos3-server
+    name: mcp-nacos3-registry-server
   ai:
     mcp:
       server:
@@ -13,13 +13,16 @@ spring:
         version: 1.0.0
         type: ASYNC  # Recommended for reactive applications
         instructions: "This reactive server provides time information tools and resources"
-        sse-message-endpoint: /mcp/messages
         capabilities:
           tool: true
           resource: true
           prompt: true
           completion: true
-        protocol: SSE
+        protocol: STREAMABLE # STREAMABLE,STATELESS
+        streamable-http:
+          mcp-endpoint: /mcp
+          #          keep-alive-interval: 30s
+          disallow-delete: false
     dashscope:
       api-key: ${DASHSCOPE_API_KEY}
 

@@ -8,7 +8,7 @@ spring:
     mcp:
       server:
         name: streamable-mcp-server
-        protocol: streamable # SSE、STREAMABLE、STATELESS
+        protocol: STATELESS # SSE、STREAMABLE、STATELESS
         version: 1.0.0
         type: ASYNC  # Recommended for reactive applications
         instructions: "This reactive server provides time information tools and resources"

@@ -28,7 +28,7 @@
         <dependency>
             <groupId>com.alibaba.cloud.ai</groupId>
             <artifactId>spring-ai-alibaba-starter-memory-mem0</artifactId>
-            <version>1.0.0.4-SNAPSHOT</version>
+            <version>${spring-ai-extensions.version}</version>
         </dependency>
 
     </dependencies>

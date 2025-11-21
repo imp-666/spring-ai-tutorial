@@ -15,6 +15,7 @@
 #
 #com.alibaba.cloud.ai.autoconfigure.mcp.nacos.NacosMcpAutoConfiguration
 #com.alibaba.cloud.ai.autoconfigure.mcp.client.NacosMcpClientAutoConfiguration
+#com.alibaba.cloud.ai.autoconfigure.mcp.client.NacosMcpClientMapAutoConfiguration
 #com.alibaba.cloud.ai.autoconfigure.mcp.client.NacosMcpToolCallbackAutoConfiguration
 
 

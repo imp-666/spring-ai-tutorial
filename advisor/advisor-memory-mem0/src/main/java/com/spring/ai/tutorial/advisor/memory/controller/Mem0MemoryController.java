@@ -33,6 +33,7 @@ public class Mem0MemoryController {
     private final VectorStore store;
     private final Mem0ServiceClient mem0ServiceClient;
 
+    // todo 待修复
     public Mem0MemoryController(ChatClient.Builder builder, VectorStore store, Mem0ServiceClient mem0ServiceClient) {
         this.store = store;
         this.mem0ServiceClient = mem0ServiceClient;
