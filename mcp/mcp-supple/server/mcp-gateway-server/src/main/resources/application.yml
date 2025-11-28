@@ -10,6 +10,9 @@ spring:
         name: mcp-gateway-server
         version: 1.0.0
         enabled: true
+        protocol: streamable
+        streamable-http:
+          mcp-endpoint: /mcp
     dashscope:
       api-key: ${DASHSCOPE_API_KEY}
 
@@ -24,12 +27,3 @@ spring:
           server-addr: 127.0.0.1:8848
           username: nacos
           password: nacos
-
-# 调试日志
-logging:
-  level:
-    io:
-      modelcontextprotocol:
-        client: DEBUG
-        spec: DEBUG
-        server: DEBUG

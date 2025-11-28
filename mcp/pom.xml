@@ -21,11 +21,11 @@
         <module>mcp-supple</module>
     </modules>
 
-    <properties>
-        <!-- Spring AI -->
-        <spring-ai.version>1.1.0-M3</spring-ai.version>
-        <!-- Spring AI Alibaba -->
-        <spring-ai-alibaba.version>1.0.0.4</spring-ai-alibaba.version>
-    </properties>
+<!--    <properties>-->
+<!--        &lt;!&ndash; Spring AI &ndash;&gt;-->
+<!--        <spring-ai.version>1.1.0-M4</spring-ai.version>-->
+<!--        &lt;!&ndash; Spring AI Alibaba &ndash;&gt;-->
+<!--        <spring-ai-alibaba.version>1.1.0.0-M4</spring-ai-alibaba.version>-->
+<!--    </properties>-->
 
 </project>

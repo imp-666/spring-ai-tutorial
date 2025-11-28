@@ -12,10 +12,6 @@
 
     <artifactId>mcp-nacos3-client</artifactId>
 
-    <properties>
-        <spring-ai-extensions.version>1.1.0.0-SNAPSHOT</spring-ai-extensions.version>
-    </properties>
-
     <dependencies>
 
         <dependency>

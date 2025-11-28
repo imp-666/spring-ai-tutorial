@@ -1,6 +1,7 @@
 package com.spring.ai.tutorial.mcp.client;
 
 import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.tool.ToolCallback;
 import org.springframework.ai.tool.ToolCallbackProvider;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -24,6 +25,12 @@ public class WebfluxClientApplication {
     @Bean
     public CommandLineRunner predefinedQuestions(ChatClient.Builder chatClientBuilder, ToolCallbackProvider tools,
                                                  ConfigurableApplicationContext context) {
+
+        ToolCallback[] toolCallbacks = tools.getToolCallbacks();
+        System.out.println("Available tools:");
+        for (ToolCallback toolCallback : toolCallbacks) {
+            System.out.println(">>> " + toolCallback.getToolDefinition().name());
+        }
 
         return args -> {
             var chatClient = chatClientBuilder

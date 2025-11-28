@@ -20,7 +20,11 @@ spring:
         version: 1.0.0
         request-timeout: 600s
         type: ASYNC  # or ASYNC for reactive applications
-        sse:
+#        sse:
+#          connections:
+#            server1:
+#              url: http://localhost:19000 # 本地
+        streamable-http:
           connections:
             server1:
               url: http://localhost:19000 # 本地
